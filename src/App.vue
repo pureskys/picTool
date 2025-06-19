@@ -4,7 +4,6 @@
       <HomeView></HomeView>
     </div>
   </el-scrollbar>
-
 </template>
 
 <script setup>

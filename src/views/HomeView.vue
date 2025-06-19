@@ -11,7 +11,7 @@
       <div class="flex w-full items-center justify-center">
         <div class="flex h-full w-full items-center justify-center">
           <el-upload
-            class="w-[calc((100%/3)+0px)] min-w-25 [&_.el-upload-dragger]:border-[3px]! [&_.el-upload-dragger]:border-dashed! [&_.el-upload-dragger]:border-blue-400! [&_.el-upload-dragger]:bg-blue-50!"
+            class="w-[calc((100%/3)+0px)] min-w-[130px] [&_.el-upload-dragger]:border-[3px]! [&_.el-upload-dragger]:border-dashed! [&_.el-upload-dragger]:border-blue-400! [&_.el-upload-dragger]:bg-blue-50!"
             drag
           >
             <el-icon size="38" color="#00BFFF	">
