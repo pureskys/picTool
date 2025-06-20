@@ -69,11 +69,12 @@
         </div>
       </div>
       <div v-else class="flex items-center justify-center">
-        <div class="text-[18px] text-gray-400 translate-y-[6px]">PNG 格式为无损格式不支持压缩</div>
+        <div class="translate-y-[6px] text-[18px] text-gray-400">PNG 格式为无损格式不支持压缩</div>
       </div>
       <!--开始转换按钮部分-->
       <div class="w-full py-3">
         <el-button
+          :loading="isLoading"
           @click="processAndDownload(fileList)"
           size="default"
           class="w-full"
@@ -110,6 +111,7 @@ const options = [
 ] // 下拉框选项
 
 // 响应式数据
+const isLoading = ref(false) // loading状态
 const outputFormat = ref('image/jpeg') // 默认转换的图片格式
 const compressionRate = ref(512) // 默认压缩率
 const uploadRef = ref() // 挂起的图片文件
@@ -133,6 +135,7 @@ const handleImageChange = (uploadFile, uploadFiles) => {
 // 处理并下载图片
 const processAndDownload = async () => {
   console.log(pic_option.value)
+  isLoading.value = true // 开启loading状态
   if (fileList.value.length === 0) {
     return
   }
@@ -161,6 +164,7 @@ const processAndDownload = async () => {
   } finally {
     uploadRef.value.clearFiles() // 清空挂起的图片
     fileList.value = [] // 清空待处理图片
+    isLoading.value = false // 关闭loading状态
   }
 }
 </script>
