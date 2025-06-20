@@ -1,5 +1,5 @@
 <template>
-  <main class="flex h-full w-full flex-col items-center justify-center gap-3 bg-cyan-50 max-sm:p-5">
+  <main class=" p-6 flex min-h-dvh w-full flex-col items-center justify-center gap-3 max-sm:p-5">
     <div class="text-4xl font-black">一键图片格式转换与压缩</div>
     <div class="font-sans font-bold text-gray-500">
       上传图片，选择目标格式和压缩质量，轻松转换并下载！支持 JPG、PNG、WEBP 等主流格式。

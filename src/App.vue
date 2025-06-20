@@ -1,9 +1,7 @@
 <template>
-  <el-scrollbar>
-    <div class="h-dvh w-dvw">
-      <HomeView></HomeView>
-    </div>
-  </el-scrollbar>
+  <div class="h-screen w-screen overflow-auto bg-cyan-50">
+    <HomeView></HomeView>
+  </div>
 </template>
 
 <script setup>
