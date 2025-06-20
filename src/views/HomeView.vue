@@ -1,10 +1,10 @@
 <template>
-  <main class=" py-6 flex min-h-dvh w-full flex-col items-center justify-center gap-3 max-sm:p-5">
-    <div class="text-4xl font-black">一键图片格式转换与压缩</div>
-    <div class="font-sans font-bold text-gray-500">
+  <main class="flex min-h-dvh w-full flex-col items-center justify-center gap-3 p-6">
+    <div class="text-4xl font-black max-sm:text-3xl">一键图片格式转换与压缩</div>
+    <div class="font-sans font-bold text-gray-500 max-sm:text-[14px]">
       上传图片，选择目标格式和压缩质量，轻松转换并下载！支持 JPG、PNG、WEBP 等主流格式。
     </div>
-    <div class="mt-6 flex min-w-110 flex-col rounded-xl bg-white p-6 px-8 shadow max-sm:w-full">
+    <div class="mt-6 flex w-110 flex-col rounded-xl bg-white p-6 px-8 shadow max-sm:w-full">
       <!--上传图片部分-->
       <div class="flex w-full items-center justify-center">
         <div class="flex h-full w-full items-center justify-center">
