@@ -135,11 +135,11 @@ const handleImageChange = (uploadFile, uploadFiles) => {
 // 处理并下载图片
 const processAndDownload = async () => {
   console.log(pic_option.value)
-  isLoading.value = true // 开启loading状态
   if (fileList.value.length === 0) {
     return
   }
   try {
+    isLoading.value = true // 开启loading状态
     const files = fileList.value.map((item) => item.raw)
 
     if (files.length === 1) {
